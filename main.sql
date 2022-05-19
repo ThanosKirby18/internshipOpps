@@ -6,4 +6,6 @@ CREATE TABLE internshipOpps
   Description TEXT,
   paid BOOLEAN
 );
+INSERT INTO internshipOpps values
+
 
