@@ -1,3 +1,5 @@
+-- .header on
+-- .mode column
 CREATE TABLE internshipOpps
 (
   Title TEXT,
@@ -21,8 +23,16 @@ INSERT INTO internshipOpps values
   ('Intern - Software Engineer','Southern California Edison','2022', 11, 'As one of our interns, you will gain a comprehensive introduction to our business. You will be assigned to a team and work on real-life projectys that bring our products and services to life. On the job training and professional development will be provided to enable you to contribute to the business. You will also have direct access to a senior member of the team, as each intern will be mentored to help you make the most of the 11-week program. There will also be an end of program project and presentation.','Remore', false);
 
 
-
 .print
 .print 'Possible Internship'
-SELECT * FROM internshipOpps
+SELECT * FROM internshipOpps;
+
+.print
+.print 'List in company alphabeticle order'
+SELECT * FROM internshipOpps ORDER BY employer;
+
+.print
+.print 'List in company in order for duration.'
+SELECT * FROM internshipOpps ORDER BY DurationWeeks;
+
 
