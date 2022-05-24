@@ -24,15 +24,25 @@ INSERT INTO internshipOpps values
 
 
 .print
-.print 'Possible Internship'
+.print '---------------Possible Internship---------------'
 SELECT * FROM internshipOpps;
 
 .print
-.print 'List in company alphabeticle order'
+.print '---------------List in company alphabeticle order---------------'
 SELECT * FROM internshipOpps ORDER BY employer;
 
 .print
-.print 'List in company in order for duration.'
+.print '---------------List in company in order for duration.---------------'
 SELECT * FROM internshipOpps ORDER BY DurationWeeks;
 
+.print
+.print
+  
+.print '---------------internships < 16 weeks---------------'
+Select title, DurationWeeks from internshipOpps Where DurationWeeks <= 16;
 
+.print
+.print
+  
+.print '---------------paid internship'---------------
+Select title, paid from internshipOpps Where paid = true;
